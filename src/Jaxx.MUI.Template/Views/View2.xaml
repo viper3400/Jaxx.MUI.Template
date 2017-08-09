@@ -8,6 +8,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Label Content="{Binding Info}" />
+        <StackPanel>
+            <Label Content="{Binding Info}" />
+            <Button Content="Command Button" Command="{Binding ButtonClicked}"/>
+        </StackPanel>
     </Grid>
 </UserControl>
